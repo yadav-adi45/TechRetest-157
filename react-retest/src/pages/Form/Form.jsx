@@ -1,3 +1,5 @@
+import React from 'react'
+import FormCard from '../../components/Cards/FormCard'
 const Form = () => {
   const Questions = [
     {
@@ -38,20 +40,31 @@ const Form = () => {
     {
       "questionNo": 8,
       "question": 'Why is the key prop important while rendering a list?',
+      "answer": 'The key prop is important while rendering a list because it helps react to identify which item has changed or added or removed. It updated the ui and avoid rendering the entire list'
     },
     {
       "questionNo": 9,
-      "question": 'What is condition Rendering?'
+      "question": 'What is condition Rendering?',
+      "answer": 'condition rendering is a type od technique in react which allows the user to render different components based on the conditions. eg: sign in button or login button'
     },
     {
       "questionNo": 10,
-      "question": 'What is the difference between State and Props?'
+      "question": 'What is the difference between State and Props?',
+      "answer": 'State is a built in object in react that stores data which can change over time, while props are used to pass data from parent to child components.'
     },
   
   ]
   return (
     <div>
-      <h1>Form</h1>
+      {Questions.map((Q) => {
+        return (
+          <FormCard
+            Qno={Q.questionNo}
+            Q={Q.question}
+            ans={Q.answer}
+          />
+        )
+      })}
     </div>
   )
 }
