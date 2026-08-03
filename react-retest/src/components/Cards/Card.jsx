@@ -1,5 +1,5 @@
 import image from '../../assets/Aditya.png'
-
+import './Card.css'
 const Card = () => {
     const cardData = [
         {
@@ -8,7 +8,6 @@ const Card = () => {
             "adm No:": "2024BTCS157",
             "img": image
         }
-
     ]
   return (
     <div>
