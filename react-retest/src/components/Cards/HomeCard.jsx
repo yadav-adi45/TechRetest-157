@@ -1,6 +1,6 @@
 import image from '../../assets/Aditya.png'
-import './Card.css'
-const Card = () => {
+import './HomeCard.css'
+const HomeCard = () => {
     const cardData = [
         {
             "name": "Aditya",
@@ -26,5 +26,5 @@ const Card = () => {
   )
 }
 
-export default Card
+export default HomeCard
 

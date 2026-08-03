@@ -59,6 +59,7 @@ const Form = () => {
       {Questions.map((Q) => {
         return (
           <FormCard
+            key={Q.questionNo}
             Qno={Q.questionNo}
             Q={Q.question}
             ans={Q.answer}
